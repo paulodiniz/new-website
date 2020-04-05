@@ -133,3 +133,7 @@ body {
   grid-area: footer;
   text-align: center;
 }
+
+.footer p {
+  font-size: 0.75em;
+}
