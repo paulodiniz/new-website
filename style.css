@@ -64,6 +64,21 @@ body {
   "react clojure";
 }
 
+
+@media (max-width: 700px) {
+  .main {
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+    "ruby"
+    "elixir"
+    "react"
+    "clojure";
+  }
+}
+
 .ruby {
   display: grid;
   grid-template-columns: 1fr 2fr;
