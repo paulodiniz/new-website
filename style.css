@@ -40,6 +40,11 @@ body {
   margin-bottom: 3rem;
 }
 
+.header .icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+
 .avatar {
   background-image: url('./avatar.jpg');
   width: 150px;
