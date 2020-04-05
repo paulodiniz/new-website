@@ -77,8 +77,8 @@ body {
 
     grid-template-areas:
     "ruby"
-    "elixir"
     "react"
+    "elixir"
     "clojure";
   }
 }
