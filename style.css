@@ -62,7 +62,6 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
 
   grid-template-areas:
   "ruby elixir"
@@ -78,31 +77,35 @@ body {
 
     grid-template-areas:
     "ruby"
-    "react"
     "elixir"
+    "react"
     "clojure";
   }
 }
 
 .ruby {
+  grid-area: ruby;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "ruby-symbol ruby-desc";
 }
 
 .elixir {
+  grid-area: elixir;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "elixir-symbol elixir-desc";
 }
 
 .react {
+  grid-area: react;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "react-symbol react-desc";
 }
 
 .clojure {
+  grid-area: clojure;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "clojure-symbol clojure-desc";
