@@ -15,13 +15,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
 
   grid-template-areas:
-  "header header header header"
-  ". main main ."
-  "footer footer footer footer";
+  "header"
+  "main"
+  "footer";
 }
 
 @media (max-width: 700px) {
@@ -43,6 +43,8 @@ body {
 .header .icon {
   max-width: 50px;
   max-height: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .avatar {
@@ -62,6 +64,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
 
   grid-template-areas:
   "ruby elixir"
@@ -85,34 +88,35 @@ body {
 .ruby {
   grid-area: ruby;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-areas: "ruby-symbol ruby-desc";
 }
 
 .elixir {
   grid-area: elixir;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-areas: "elixir-symbol elixir-desc";
 }
 
 .react {
   grid-area: react;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-areas: "react-symbol react-desc";
 }
 
 .clojure {
   grid-area: clojure;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-areas: "clojure-symbol clojure-desc";
 }
 
 .symbol img {
-  height: 128px;
-  width: 128px;
+  margin: 25px;
+  height: 64px;
+  width: 64px;
 }
 
 .footer {
