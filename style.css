@@ -24,16 +24,6 @@ body {
   "footer";
 }
 
-@media (max-width: 700px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  }
-}
-
 .header {
   grid-area: header;
   text-align: center;
