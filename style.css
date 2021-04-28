@@ -19,6 +19,7 @@ body {
 
   grid-template-areas:
   "header"
+  "projects"
   "main"
   "footer";
 }
@@ -26,7 +27,6 @@ body {
 .header {
   grid-area: header;
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 .header .icon {
@@ -34,6 +34,26 @@ body {
   max-height: 50px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.projects {
+  grid-area: projects;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 0.25fr 2fr 0.25fr;
+  margin-bottom: 30px;
+
+  grid-template-areas:
+  "title title title"
+  ". life .";
+}
+
+.title {
+  grid-area: title;
+}
+
+.life {
+  grid-area: life;
 }
 
 .avatar {
